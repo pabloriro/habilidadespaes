@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades PAES de Competencia Lectora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .tab-btn.active {
+            background-color: #06B6D4; /* cyan-500 */
+            color: white;
+            border-color: #06B6D4;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-slate-800 text-white p-6 md:p-10 shadow-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Habilidades PAES de Competencia Lectora</h1>
+            <p class="text-lg md:text-xl text-slate-300"><strong>Objetivo de la clase:</strong> Reconocer las habilidades de Localizar, Interpretar y Evaluar, a partir del análisis de la formulación de preguntas de la PAES de Competencia Lectora.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto p-4 md:p-8">
+
+        <!-- Section 1: Principio Fundamental -->
+        <section id="principio" class="mb-12 bg-white p-6 rounded-xl shadow-md border border-gray-200">
+            <h2 class="text-2xl font-bold text-slate-700 mb-4 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3 text-cyan-500"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0L12 2.69z"></path><path d="M12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path></svg>
+                Principio Fundamental: La Acción Mental
+            </h2>
+            <p class="mb-4 text-gray-600">Para responder correctamente en la PAES, es necesario entender lo que pide hacer cada pregunta. Antes de responder, se debe analizar lo siguiente:</p>
+            <div class="bg-cyan-50 border-l-4 border-cyan-500 text-cyan-800 p-4 rounded-r-lg">
+                <p class="font-semibold">"¿Qué me está pidiendo mi cerebro que haga con la información del texto?"</p>
+            </div>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <p class="font-semibold">¿Se pide <span class="text-blue-600">encontrar</span> y <span class="text-blue-600">copiar</span> un dato?</p>
+                    <p class="text-2xl font-bold text-blue-500 mt-2">→ LOCALIZAR</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <p class="font-semibold">¿Se pide <span class="text-green-600">conectar ideas</span> o <span class="text-green-600">deducir</span> algo?</p>
+                    <p class="text-2xl font-bold text-green-500 mt-2">→ INTERPRETAR</p>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <p class="font-semibold">¿Se pide dar una <span class="text-purple-600">opinión con fundamentos</span>?</p>
+                    <p class="text-2xl font-bold text-purple-500 mt-2">→ EVALUAR</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Cómo reconocer cada habilidad -->
+        <section id="habilidades" class="mb-12">
+            <h2 class="text-2xl font-bold text-slate-700 mb-6 text-center">Cómo Reconocer Cada Habilidad</h2>
+            
+            <!-- Tabs Navigation -->
+            <div class="flex justify-center border-b border-gray-300 mb-6 flex-wrap">
+                <button class="tab-btn active text-lg font-semibold py-2 px-6 border-b-2 border-transparent transition-colors duration-300" onclick="showTab('localizar')">Localizar</button>
+                <button class="tab-btn text-lg font-semibold py-2 px-6 border-b-2 border-transparent transition-colors duration-300" onclick="showTab('interpretar')">Interpretar</button>
+                <button class="tab-btn text-lg font-semibold py-2 px-6 border-b-2 border-transparent transition-colors duration-300" onclick="showTab('evaluar')">Evaluar</button>
+            </div>
+
+            <!-- Tabs Content -->
+            <div id="tabs-content">
+                <!-- Localizar Tab -->
+                <div id="localizar" class="tab-content active">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                        <h3 class="text-xl font-bold text-blue-600 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            Habilidad 1: Localizar
+                        </h3>
+                        <p class="mb-4"><span class="font-semibold text-gray-700">Definición:</span> Consiste en encontrar información explícita en el texto, aunque a veces use otras palabras (paráfrasis).</p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-700 mb-2">Pistas en las preguntas:</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>"Según el texto/la lectura..."</li>
+                                    <li>"En el párrafo X se afirma que..."</li>
+                                    <li>"¿Cuál es una característica de...?"</li>
+                                    <li>"¿Qué se menciona sobre...?"</li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                                <h4 class="font-semibold text-gray-700 mb-2">Ejemplo:</h4>
+                                <p class="text-sm italic mb-2">"Según la lectura, ¿por qué razón ha mejorado el nivel de vida en la actualidad?"</p>
+                                <p class="text-sm text-gray-600"><span class="font-bold">Análisis:</span> La pregunta pide buscar una causa que está escrita en el texto. La respuesta se puede subrayar.</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-r-lg">
+                            <p class="text-sm font-semibold text-yellow-800">Nota: Si la respuesta no está escrita en el texto y se debe deducir, no es Localizar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interpretar Tab -->
+                <div id="interpretar" class="tab-content">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                         <h3 class="text-xl font-bold text-green-600 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                            Habilidad 2: Interpretar
+                        </h3>
+                        <p class="mb-4"><span class="font-semibold text-gray-700">Definición:</span> Consiste en conectar ideas que están en distintas partes del texto o "leer entre líneas" para encontrar un significado implícito.</p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-700 mb-2">Pistas en las preguntas:</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>"Se infiere/deduce/concluye que..."</li>
+                                    <li>"¿Cuál es la finalidad/propósito de...?"</li>
+                                    <li>"¿Qué relación hay entre...?"</li>
+                                    <li>"¿Qué quiere decir la expresión '...'?"</li>
+                                    <li>"Un resumen del texto sería..."</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg border border-green-200">
+                                <h4 class="font-semibold text-gray-700 mb-2">Ejemplo:</h4>
+                                <p class="text-sm italic mb-2">"¿qué significa la expresión 'La Economía es la más vieja de las artes'?"</p>
+                                <p class="text-sm text-gray-600"><span class="font-bold">Análisis:</span> Pide descifrar una frase que no es literal. Se debe usar el contexto para entenderla.</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-r-lg">
+                            <p class="text-sm font-semibold text-yellow-800">Nota: Toda inferencia debe tener una base o pista en el texto.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evaluar Tab -->
+                <div id="evaluar" class="tab-content">
+                    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                        <h3 class="text-xl font-bold text-purple-600 mb-4 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            Habilidad 3: Evaluar
+                        </h3>
+                        <p class="mb-4"><span class="font-semibold text-gray-700">Definición:</span> Consiste en emitir un juicio sobre el texto, su forma o su contenido, usando siempre fundamentos y la información proporcionada.</p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-700 mb-2">Pistas en las preguntas:</h4>
+                                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                    <li>"¿Qué actitud tiene el autor...?"</li>
+                                    <li>"¿Cuál es el tono del texto?"</li>
+                                    <li>"¿A qué tipo de lector le serviría más este texto?"</li>
+                                    <li>"Al comparar el texto con [otra cosa]..."</li>
+                                    <li>"Sobre la información del texto, se puede decir que es..."</li>
+                                </ul>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg border border-purple-200">
+                                <h4 class="font-semibold text-gray-700 mb-2">Ejemplo:</h4>
+                                <p class="text-sm italic mb-2">"¿Cuál de las siguientes personas podría satisfacer su necesidad de lectura con el texto leído?"</p>
+                                <p class="text-sm text-gray-600"><span class="font-bold">Análisis:</span> Pide salir del texto y pensar en su utilidad para otras personas. Es un juicio de valor sobre la pertinencia del texto.</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded-r-lg">
+                            <p class="text-sm font-semibold text-yellow-800">Nota: La evaluación no es una opinión personal, sino un juicio técnico basado en evidencia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Ejercicio de Reconocimiento -->
+        <section id="reconocimiento" class="pt-12">
+            <h2 class="text-2xl font-bold text-slate-700 mb-6 text-center">Ejercicio Interactivo: Reconocimiento de Habilidad</h2>
+            <p class="text-center text-gray-600 mb-8">Lee cada pregunta, elige la habilidad que corresponde y verifica tu respuesta.</p>
+            <div id="quiz-container" class="space-y-6">
+                <!-- Questions will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-800 text-white mt-12 py-6">
+        <div class="max-w-5xl mx-auto text-center text-slate-400">
+            <p>&copy; 2024 Recurso de estudio para la PAES.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Tabs
+        function showTab(tabId) {
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector(`.tab-btn[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+
+        // JavaScript for Multiple Choice Quiz
+        const quizData = [
+            { question: "1. ¿Cuál es la finalidad del primer párrafo de la lectura?", answer: "Interpretar", justification: "Pide reconocer la función o el propósito de una parte del texto, no un dato literal." },
+            { question: "2. Según la lectura, ¿por qué razón ha mejorado el nivel de vida en la actualidad?", answer: "Localizar", justification: "La pregunta inicia con 'Según la lectura' y la respuesta es una paráfrasis de información explícita." },
+            { question: "3. Según la lectura, ¿por qué los problemas económicos se siguen presentando en todas partes, pese a la mejora en las condiciones de vida?", answer: "Interpretar", justification: "Requiere conectar dos ideas del texto (mejores condiciones y necesidades crecientes) para establecer una relación de causa-consecuencia." },
+            { question: "4. A partir de la información de la lectura, ¿qué significa la expresión 'La Economía es la más vieja de las artes'?", answer: "Interpretar", justification: "Pide descifrar el significado de una frase en lenguaje figurado, usando el contexto." },
+            { question: "5. En la lectura 1, ¿para qué se nombran disciplinas científicas como la Antropología o la Física?", answer: "Interpretar", justification: "Pregunta por el propósito (¿para qué?) de un ejemplo dentro del texto, es decir, su función." },
+            { question: "6. Según la lectura, ¿cuál es la función de la Economía para controlar la escasez?", answer: "Interpretar", justification: "Exige sintetizar la idea principal sobre un tema específico que se desarrolla a lo largo de varios párrafos." },
+            { question: "7. ¿Cuál de las siguientes personas podría satisfacer su necesidad de lectura con el texto leído?", answer: "Evaluar", justification: "Requiere juzgar la pertinencia del texto para un lector o contexto externo." },
+            { question: "8. ¿Cuál es la función del segundo párrafo respecto de la investigación abordada en la lectura 2?", answer: "Interpretar", justification: "Pide determinar la función de una parte del texto en relación con el tema central." },
+            { question: "9. Según la lectura 2, ¿para qué se usa el acelerómetro?", answer: "Localizar", justification: "La respuesta se encuentra de forma explícita y directa en el texto." },
+            { question: "10. ¿Qué perspectiva adopta el emisor en la sección 'Principales resultados y conclusiones del estudio'?", answer: "Evaluar", justification: "Se debe juzgar o calificar la posición o el enfoque del emisor en una parte del texto." },
+            { question: "11. En la investigación mencionada en la lectura 2, ¿con qué finalidad se registró información sobre escuelas con el programa Jardín Activo y otras sin este?", answer: "Interpretar", justification: "Pide inferir el propósito de una acción descrita en el estudio, conectando la metodología con los objetivos." },
+            { question: "12. A partir del siguiente párrafo de la lectura 2, ¿qué revela el estudio respecto de las sesiones de Jardín Activo?", answer: "Interpretar", justification: "Requiere sintetizar la conclusión principal que se desprende de los datos presentados en el párrafo." },
+            { question: "13. En el último párrafo, ¿qué contraste se expresa respecto de las educadoras de párvulos y el programa Jardín Activo?", answer: "Interpretar", justification: "Pide identificar una relación específica (contraste) entre dos informaciones dadas en el texto." },
+            { question: "14. ¿Cuál es uno de los propósitos del IND que se cumplió según el estudio?", answer: "Localizar", justification: "La respuesta se encuentra de manera explícita en el texto ('disminuyendo el tiempo sedentario significativamente')." },
+            { question: "15. Según la lectura 2, ¿qué tarea motriz es menos frecuente entre las actividades que desarrollan actualmente los párvulos?", answer: "Localizar", justification: "La pregunta pide identificar un dato específico que se menciona directamente en la sección de resultados." }
+        ];
+
+        const quizContainer = document.getElementById('quiz-container');
+        const options = ["Localizar", "Interpretar", "Evaluar"];
+
+        quizData.forEach((item, index) => {
+            const questionIndex = index + 1;
+            const questionBlock = document.createElement('div');
+            questionBlock.className = 'bg-white p-6 rounded-xl shadow-md border border-gray-200';
+
+            let optionsHtml = '';
+            options.forEach(option => {
+                optionsHtml += `<button onclick="checkAnswer(${questionIndex}, '${option}', this)" class="w-full text-center p-2 rounded-lg bg-gray-200 hover:bg-gray-300 transition">${option}</button>`;
+            });
+
+            questionBlock.innerHTML = `
+                <p class="font-semibold mb-4">${item.question}</p>
+                <div id="q${questionIndex}_options" class="flex flex-col sm:flex-row gap-2">
+                    ${optionsHtml}
+                </div>
+                <div id="q${questionIndex}_feedback" class="hidden mt-4 pt-4 border-t"></div>
+            `;
+            quizContainer.appendChild(questionBlock);
+        });
+
+        function checkAnswer(questionNumber, selectedAnswer, buttonElement) {
+            const correctAnswerData = quizData[questionNumber - 1];
+            const feedbackDiv = document.getElementById(`q${questionIndex}_feedback`);
+            const optionsDiv = document.getElementById(`q${questionIndex}_options`);
+
+            const buttons = optionsDiv.getElementsByTagName('button');
+            for (let btn of buttons) {
+                btn.disabled = true;
+                btn.classList.add('opacity-70', 'cursor-not-allowed');
+                if (btn.textContent === correctAnswerData.answer) {
+                    btn.className = 'w-full text-center p-2 rounded-lg bg-green-500 text-white';
+                }
+            }
+
+            if (selectedAnswer !== correctAnswerData.answer) {
+                buttonElement.className = 'w-full text-center p-2 rounded-lg bg-red-500 text-white';
+            }
+            
+            let skillColor = 'text-green-600';
+            if (correctAnswerData.answer === 'Localizar') skillColor = 'text-blue-600';
+            if (correctAnswerData.answer === 'Evaluar') skillColor = 'text-purple-600';
+
+            const feedbackHtml = `
+                <p><span class="font-bold ${skillColor}">HABILIDAD CORRECTA: ${correctAnswerData.answer}.</span></p>
+                <p class="text-gray-600 text-sm mt-1">Justificación: ${correctAnswerData.justification}</p>
+            `;
+            feedbackDiv.innerHTML = feedbackHtml;
+            feedbackDiv.classList.remove('hidden');
+        }
+    </script>
+
+</body>
+</html>
