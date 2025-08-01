@@ -251,8 +251,8 @@
 
         function checkAnswer(questionNumber, selectedAnswer, buttonElement) {
             const correctAnswerData = quizData[questionNumber - 1];
-            const feedbackDiv = document.getElementById(`q${questionIndex}_feedback`);
-            const optionsDiv = document.getElementById(`q${questionIndex}_options`);
+            const feedbackDiv = document.getElementById(`q${questionNumber}_feedback`);
+            const optionsDiv = document.getElementById(`q${questionNumber}_options`);
 
             const buttons = optionsDiv.getElementsByTagName('button');
             for (let btn of buttons) {
